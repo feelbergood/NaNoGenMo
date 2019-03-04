@@ -7,6 +7,7 @@ var relations = ["is in competition with", "is familiar with", "is in love with"
 var conditions = [];
 var consequences = [];
 var actions = ["killed", "kissed", "betrayed", "lent money to", "poisoned", "travelled with", "got married with"];
+var origin = [];
 
 var inputJSON = {
     goals,
@@ -15,6 +16,7 @@ var inputJSON = {
     conditions,
     actions,
     consequences,
+    origin
 };
 
 console.log(inputJSON);

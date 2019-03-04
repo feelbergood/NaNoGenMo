@@ -1,5 +1,11 @@
 {
-  "animal": ["panda", "fox", "capybara", "iguana"],
-  "emotion": ["sad", "happy", "angry", "jealous"],
-  "origin": ["I am #emotion.a# #animal#."]
+  "set_goals": ["[goals:kill #characters_object#]", "[goals:kiss #characters_object#]", "[goals:betray #characters_object#]", "[goals:lend money to #characters_object#]", "[goals:poison #characters_object#]", "[goals:travel with #characters_object#]", "[goals:get married with #characters_object#]"],
+  "set_characters_subject": ["[characters_subject:Jack]", "[characters_subject:Tom]", "[characters_subject:Bruce]", "[characters_subject:Julia]"],
+  "set_characters_object": ["[characters_object:Mary]", "[characters_object:Helen]", "[characters_object:Jerry]", "[characters_object:Gwen]"],
+  "relations": ["is in competition with", "is familiar with", "is in love with", "trusts", "deceits"],
+  "conditions": ["#characters_subject# #relations# #characters_object#"],
+  "consequences": ["#characters_subject# #relations# #characters_object#"],
+  "status": ["achieves", "fails"],
+  "story": ["#characters_subject# wants to #goals#, #conditions#, #characters_subject# performs to #goals#, #consequences#, #characters_subject# #status# to #goals#"],
+  "origin": ["#[#set_characters_subject#][#set_characters_object#][#set_goals#]story#"]
 }
